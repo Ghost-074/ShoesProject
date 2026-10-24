@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             pbLogo = new PictureBox();
             pnMain = new Panel();
-            lbLogin = new Label();
-            txtLogin = new TextBox();
-            btnLogin = new Button();
             btnGuest = new Button();
+            btnLogin = new Button();
+            txtLogin = new TextBox();
+            lbLogin = new Label();
             ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             pnMain.SuspendLayout();
             SuspendLayout();
@@ -62,21 +62,17 @@
             pnMain.Size = new Size(316, 179);
             pnMain.TabIndex = 1;
             // 
-            // lbLogin
+            // btnGuest
             // 
-            lbLogin.AutoSize = true;
-            lbLogin.Location = new Point(138, 18);
-            lbLogin.Name = "lbLogin";
-            lbLogin.Size = new Size(41, 15);
-            lbLogin.TabIndex = 0;
-            lbLogin.Text = "Логин";
-            // 
-            // txtLogin
-            // 
-            txtLogin.Location = new Point(33, 51);
-            txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(250, 23);
-            txtLogin.TabIndex = 1;
+            btnGuest.BackColor = Color.FromArgb(112, 178, 175);
+            btnGuest.FlatStyle = FlatStyle.Flat;
+            btnGuest.Location = new Point(83, 140);
+            btnGuest.Name = "btnGuest";
+            btnGuest.Size = new Size(150, 30);
+            btnGuest.TabIndex = 3;
+            btnGuest.Text = "Войти как гость";
+            btnGuest.UseVisualStyleBackColor = false;
+            btnGuest.Click += BtnGuest_Click;
             // 
             // btnLogin
             // 
@@ -88,17 +84,23 @@
             btnLogin.TabIndex = 2;
             btnLogin.Text = "Войти";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += BtnLogin_Click;
             // 
-            // btnGuest
+            // txtLogin
             // 
-            btnGuest.BackColor = Color.FromArgb(112, 178, 175);
-            btnGuest.FlatStyle = FlatStyle.Flat;
-            btnGuest.Location = new Point(83, 140);
-            btnGuest.Name = "btnGuest";
-            btnGuest.Size = new Size(150, 30);
-            btnGuest.TabIndex = 3;
-            btnGuest.Text = "Войти как гость";
-            btnGuest.UseVisualStyleBackColor = false;
+            txtLogin.Location = new Point(33, 51);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(250, 23);
+            txtLogin.TabIndex = 1;
+            // 
+            // lbLogin
+            // 
+            lbLogin.AutoSize = true;
+            lbLogin.Location = new Point(138, 18);
+            lbLogin.Name = "lbLogin";
+            lbLogin.Size = new Size(41, 15);
+            lbLogin.TabIndex = 0;
+            lbLogin.Text = "Логин";
             // 
             // FormLogin
             // 
