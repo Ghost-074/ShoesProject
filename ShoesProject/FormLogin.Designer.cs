@@ -43,9 +43,9 @@
             // 
             pbLogo.Anchor = AnchorStyles.None;
             pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
-            pbLogo.Location = new Point(143, 34);
+            pbLogo.Location = new Point(123, 32);
             pbLogo.Name = "pbLogo";
-            pbLogo.Size = new Size(100, 100);
+            pbLogo.Size = new Size(86, 93);
             pbLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pbLogo.TabIndex = 0;
             pbLogo.TabStop = false;
@@ -57,18 +57,18 @@
             pnMain.Controls.Add(btnLogin);
             pnMain.Controls.Add(txtLogin);
             pnMain.Controls.Add(lbLogin);
-            pnMain.Location = new Point(34, 150);
+            pnMain.Location = new Point(29, 140);
             pnMain.Name = "pnMain";
-            pnMain.Size = new Size(316, 179);
+            pnMain.Size = new Size(271, 167);
             pnMain.TabIndex = 1;
             // 
             // btnGuest
             // 
             btnGuest.BackColor = Color.FromArgb(112, 178, 175);
             btnGuest.FlatStyle = FlatStyle.Flat;
-            btnGuest.Location = new Point(83, 140);
+            btnGuest.Location = new Point(71, 131);
             btnGuest.Name = "btnGuest";
-            btnGuest.Size = new Size(150, 30);
+            btnGuest.Size = new Size(129, 28);
             btnGuest.TabIndex = 3;
             btnGuest.Text = "Войти как гость";
             btnGuest.UseVisualStyleBackColor = false;
@@ -78,9 +78,9 @@
             // 
             btnLogin.BackColor = Color.FromArgb(210, 246, 231);
             btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Location = new Point(83, 92);
+            btnLogin.Location = new Point(71, 86);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(150, 30);
+            btnLogin.Size = new Size(129, 28);
             btnLogin.TabIndex = 2;
             btnLogin.Text = "Войти";
             btnLogin.UseVisualStyleBackColor = false;
@@ -88,28 +88,29 @@
             // 
             // txtLogin
             // 
-            txtLogin.Location = new Point(33, 51);
+            txtLogin.Location = new Point(28, 48);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(250, 23);
+            txtLogin.Size = new Size(215, 22);
             txtLogin.TabIndex = 1;
             // 
             // lbLogin
             // 
             lbLogin.AutoSize = true;
-            lbLogin.Location = new Point(138, 18);
+            lbLogin.Location = new Point(118, 17);
             lbLogin.Name = "lbLogin";
-            lbLogin.Size = new Size(41, 15);
+            lbLogin.Size = new Size(37, 14);
             lbLogin.TabIndex = 0;
             lbLogin.Text = "Логин";
             // 
             // FormLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(6F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(384, 361);
+            ClientSize = new Size(329, 337);
             Controls.Add(pnMain);
             Controls.Add(pbLogo);
+            Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
